@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.canvas.Canvas?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.SplitPane?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+
+<SplitPane dividerPositions="0.29797979797979796" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.172-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+    <items>
+        <Pane fx:id="PANE" minWidth="500.0" prefHeight="600.0" prefWidth="600.0" style="-fx-background-color: black;">
+            <children>
+                <Canvas fx:id="CANVAS" height="600.0" width="600.0" />
+            </children>
+        </Pane>
+        <Pane minWidth="0.0" prefHeight="200.0" prefWidth="200.0">
+            <children>
+                <VBox fx:id="VBOX" maxWidth="200.0">
+                    <children>
+                        <ChoiceBox fx:id="CHOICEBOX" prefHeight="25.0" prefWidth="100.0" VBox.vgrow="ALWAYS" />
+                  <RadioButton fx:id="D2RB" mnemonicParsing="false" selected="true" text="2D">
+                     <toggleGroup>
+                        <ToggleGroup fx:id="DIMENSION" />
+                     </toggleGroup>
+                  </RadioButton>
+                  <RadioButton fx:id="D3RB" mnemonicParsing="false" text="3D" toggleGroup="$DIMENSION" />
+                  <Separator prefWidth="200.0" />
+                    </children></VBox>
+            </children>
+        </Pane>
+    </items>
+</SplitPane>
