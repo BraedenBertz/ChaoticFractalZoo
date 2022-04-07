@@ -38,6 +38,12 @@ public class BigComplex {
     return imaginary;
   }
 
+  public double getDReal() {return  real.doubleValue();}
+
+  public double getDIm() {return  imaginary.doubleValue();}
+
+  public double abs() {return real.doubleValue()*real.doubleValue() + imaginary.doubleValue()*imaginary.doubleValue();}
+
   @Override
   public String toString() {
     return "("+real.toString()+", "+imaginary.toString()+")";
