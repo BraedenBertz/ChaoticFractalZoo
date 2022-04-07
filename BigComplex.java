@@ -2,6 +2,9 @@ package sample;
 
 import java.math.BigDecimal;
 
+/**
+ * Class that represents a complex number with arbitrary precision.
+ */
 public class BigComplex {
   BigDecimal real;
   BigDecimal imaginary;
